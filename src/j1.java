@@ -102,7 +102,7 @@ public class j1 {
                     status = false;
                     break;
             }
-            return status;
+                                   return status;
         }
         public static int[][] setMatrixValues(int[][] matrix, String label){
             Scanner in = new Scanner(System.in);
@@ -182,4 +182,18 @@ public class j1 {
         }
 
     }
+{
+ public static boolean checkIfValidMult(int[][] matrix1, int[][] matrix2){
+            boolean status;
+            int columns = matrix1[0].length;
+            int rows = matrix2.length;
+            if( columns == rows){
+                status = true;
+            }else{
+                status = false;
+            }
+            return status;
+        }
+
+}
 
